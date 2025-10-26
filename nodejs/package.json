@@ -1,0 +1,46 @@
+{
+  "name": "ailuntz",
+  "version": "1.0.0",
+  "description": "A colorful and elegant personal CV CLI tool",
+  "main": "index.js",
+  "bin": {
+    "cv": "./bin/cv.js"
+  },
+  "scripts": {
+    "test": "node bin/cv.js"
+  },
+  "keywords": [
+    "cli",
+    "cv",
+    "resume",
+    "personal",
+    "portfolio",
+    "terminal",
+    "ailuntz"
+  ],
+  "author": {
+    "name": "Ailuntz",
+    "email": "ailuntz@icloud.com",
+    "url": "https://ailuntz.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ailuntz/cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ailuntz/cli/issues"
+  },
+  "homepage": "https://ailuntz.com",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2"
+  },
+  "files": [
+    "bin/",
+    "index.js",
+    "README.md"
+  ]
+}

@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: ailuntz
+Version: 1.0.0
+Summary: A colorful and elegant personal CV CLI tool
+Home-page: https://ailuntz.com
+Author: Ailuntz
+Author-email: Ailuntz <ailuntz@example.com>
+License: MIT
+Project-URL: Homepage, https://ailuntz.com
+Project-URL: Source, https://github.com/ailuntz/ailuntz
+Project-URL: Bug Reports, https://github.com/ailuntz/ailuntz/issues
+Keywords: cli,cv,resume,personal,portfolio,terminal
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: home-page
+Dynamic: requires-python

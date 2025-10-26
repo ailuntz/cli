@@ -1,0 +1,2 @@
+[console_scripts]
+cv = ailuntz.cli:main
