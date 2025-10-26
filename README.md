@@ -44,6 +44,21 @@ ailuntz cv
 ailuntz cv
 ```
 
+### ⚠️ 常见问题
+
+**macOS 提示 "command not found: ailuntz"**
+
+Python 包安装路径不在 PATH 中，解决方法：
+
+```bash
+# 添加到 PATH
+echo 'export PATH="$HOME/Library/Python/3.9/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+
+# 或使用 python -m 方式运行
+python3 -m ailuntz cv
+```
+
 ## 💻 本地开发
 
 ### Python 版本
