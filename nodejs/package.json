@@ -1,5 +1,5 @@
 {
-  "name": "ailuntz",
+  "name": "@ailuntz/cli",
   "version": "1.0.0",
   "description": "A colorful and elegant personal CV CLI tool",
   "main": "index.js",

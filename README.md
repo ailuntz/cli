@@ -30,7 +30,7 @@ cv
 
 ```bash
 # 安装
-npm install -g ailuntz
+npm install -g @ailuntz/cli
 
 # 运行
 cv
@@ -120,8 +120,8 @@ cd nodejs
 # 登录 npm（首次需要）
 npm login
 
-# 发布包
-npm publish
+# 发布包（scoped package 需要 --access public）
+npm publish --access public
 ```
 
 ## 🎨 自定义
