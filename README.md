@@ -20,7 +20,7 @@
 
 ```bash
 # 安装
-pip install ailuntz
+pip3 install ailuntz
 
 # 运行
 ailuntz cv
@@ -160,7 +160,6 @@ MIT License - 详见 [LICENSE](LICENSE) 文件
 **Ailuntz**
 
 - Website: [https://ailuntz.com](https://ailuntz.com)
-- Email: ailuntz@example.com
 - GitHub: [@ailuntz](https://github.com/ailuntz)
 
 ## 🤝 贡献
