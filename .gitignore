@@ -18,6 +18,9 @@ venv/
 .venv/
 pip-log.txt
 pip-delete-this-directory.txt
+*.egg-info/
+.eggs/
+*.egg
 
 # Logs
 *.log
