@@ -95,32 +95,34 @@ cli.ailuntz.com/
         └── cv.js         # CLI 入口点
 ```
 
-## 🛠️ 发布到 PyPI
+## 🛠️ 发布
+
+### 发布到 PyPI
 
 ```bash
-# 进入 Python 目录
 cd python
 
-# 安装构建工具
+# 创建虚拟环境并安装构建工具
+python3 -m venv .venv
+source .venv/bin/activate
 pip install build twine
 
 # 构建包
 python -m build
 
-# 上传到 PyPI（需要先注册账号）
+# 上传到 PyPI（需要先在 https://pypi.org 注册账号）
 twine upload dist/*
 ```
 
-## 🛠️ 发布到 npm
+### 发布到 npm
 
 ```bash
-# 进入 Node.js 目录
 cd nodejs
 
-# 登录 npm（首次需要）
+# 登录 npm（需要先在 https://www.npmjs.com 注册账号）
 npm login
 
-# 发布包（scoped package 需要 --access public）
+# 发布（scoped package 需要 --access public）
 npm publish --access public
 ```
 
