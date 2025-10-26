@@ -31,4 +31,4 @@ Source = "https://github.com/ailuntz/cli"
 "Bug Reports" = "https://github.com/ailuntz/cli/issues"
 
 [project.scripts]
-cv = "ailuntz.cli:main"
+ailuntz = "ailuntz.cli:main"

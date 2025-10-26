@@ -23,7 +23,7 @@
 pip install ailuntz
 
 # 运行
-cv
+ailuntz cv
 ```
 
 ### 方式二：通过 npm 安装（Node.js）
@@ -33,7 +33,7 @@ cv
 npm install -g @ailuntz/cli
 
 # 运行
-cv
+ailuntz cv
 ```
 
 ## 🚀 使用方法
@@ -41,7 +41,7 @@ cv
 安装完成后，在终端中输入以下命令即可查看个人简历：
 
 ```bash
-cv
+ailuntz cv
 ```
 
 ## 💻 本地开发
@@ -56,7 +56,7 @@ cd python
 pip install -e .
 
 # 运行测试
-cv
+ailuntz cv
 ```
 
 ### Node.js 版本

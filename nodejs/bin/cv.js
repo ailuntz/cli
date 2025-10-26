@@ -70,12 +70,35 @@ ${colors.cyan}${colors.bold}${border}${colors.reset}
 }
 
 // Main execution
-try {
-  printCV();
-  process.exit(0);
-} catch (error) {
-  console.error('Error:', error.message);
-  process.exit(1);
+function main() {
+  const args = process.argv.slice(2);
+  const command = args[0];
+
+  if (!command || command === 'cv') {
+    try {
+      printCV();
+      process.exit(0);
+    } catch (error) {
+      console.error('Error:', error.message);
+      process.exit(1);
+    }
+  } else if (command === '--help' || command === '-h') {
+    console.log(`
+${colors.cyan}${colors.bold}Ailuntz CLI - Personal CV Tool${colors.reset}
+
+Usage:
+  ${colors.green}ailuntz cv${colors.reset}      Display CV
+  ${colors.green}ailuntz --help${colors.reset}  Show this help message
+
+Examples:
+  ${colors.yellow}ailuntz cv${colors.reset}
+    `);
+    process.exit(0);
+  } else {
+    console.error(`${colors.red}Unknown command: ${command}${colors.reset}`);
+    console.log(`Run ${colors.green}ailuntz --help${colors.reset} for usage information.`);
+    process.exit(1);
+  }
 }
 
 // Handle keyboard interrupt
@@ -83,3 +106,5 @@ process.on('SIGINT', () => {
   console.log('\n\nGoodbye! 👋');
   process.exit(0);
 });
+
+main();

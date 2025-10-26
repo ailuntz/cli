@@ -48,13 +48,13 @@ git checkout -b feature/your-feature-name
 Python 版本：
 ```bash
 cd python
-python -m ailuntz.cli
+python -m ailuntz.cli cv
 ```
 
 Node.js 版本：
 ```bash
 cd nodejs
-node bin/cv.js
+node bin/cv.js cv
 ```
 
 5. **提交更改**

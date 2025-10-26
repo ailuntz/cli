@@ -11,7 +11,7 @@ pip install ailuntz
 ## 使用
 
 ```bash
-cv
+ailuntz cv
 ```
 
 ## 特性

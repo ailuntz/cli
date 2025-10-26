@@ -72,11 +72,44 @@ def print_cv():
     print(cv_content)
 
 
+def show_help():
+    """Display help message."""
+    CYAN = "\033[96m"
+    BOLD = "\033[1m"
+    GREEN = "\033[92m"
+    YELLOW = "\033[93m"
+    RESET = "\033[0m"
+
+    help_text = f"""
+{CYAN}{BOLD}Ailuntz CLI - Personal CV Tool{RESET}
+
+Usage:
+  {GREEN}ailuntz cv{RESET}      Display CV
+  {GREEN}ailuntz --help{RESET}  Show this help message
+
+Examples:
+  {YELLOW}ailuntz cv{RESET}
+    """
+    print(help_text)
+
+
 def main():
     """Main entry point for the CLI."""
     try:
-        print_cv()
-        return 0
+        # Get command line arguments
+        args = sys.argv[1:]
+
+        if not args or args[0] == 'cv':
+            print_cv()
+            return 0
+        elif args[0] in ['--help', '-h', 'help']:
+            show_help()
+            return 0
+        else:
+            print(f"Unknown command: {args[0]}", file=sys.stderr)
+            print("Run 'ailuntz --help' for usage information.")
+            return 1
+
     except KeyboardInterrupt:
         print("\n\nGoodbye! 👋")
         return 0

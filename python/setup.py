@@ -40,7 +40,7 @@ setup(
     python_requires=">=3.7",
     entry_points={
         "console_scripts": [
-            "cv=ailuntz.cli:main",
+            "ailuntz=ailuntz.cli:main",
         ],
     },
     keywords="cli cv resume personal portfolio terminal",

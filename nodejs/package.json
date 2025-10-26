@@ -4,7 +4,7 @@
   "description": "A colorful and elegant personal CV CLI tool",
   "main": "index.js",
   "bin": {
-    "cv": "./bin/cv.js"
+    "ailuntz": "./bin/cv.js"
   },
   "scripts": {
     "test": "node bin/cv.js"
