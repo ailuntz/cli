@@ -7,7 +7,7 @@ name = "ailuntz"
 version = "1.0.0"
 description = "A colorful and elegant personal CV CLI tool"
 readme = "../redeme.md"
-authors = [{ name = "Ailuntz", email = "ailuntz@example.com" }]
+authors = [{ name = "Ailuntz", email = "ailuntz@icloud.com" }]
 license = { text = "MIT" }
 classifiers = [
     "Development Status :: 5 - Production/Stable",
