@@ -1,174 +1,177 @@
 # ✨ Ailuntz - Personal CV CLI Tool
 
-一个**优雅、炫酷、实用**的个人简介命令行工具。通过简单的 `cv` 命令即可在终端中展示精美的个人简历。
+An **elegant, cool, and practical** personal CV command-line tool. Display your beautiful resume in the terminal with a simple `cv` command.
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.7+-green.svg)
 ![Node](https://img.shields.io/badge/node-12.0+-green.svg)
 
-## 🎯 特性
+English | [简体中文](README.zh-CN.md)
 
-- 🎨 **炫酷界面** - 使用 ANSI 颜色代码打造精美的终端界面
-- 🚀 **快速安装** - 支持 pip 和 npm 两种安装方式
-- 💼 **完整展示** - 展示个人信息、技能、教育背景、项目经历等
-- 🌈 **跨平台** - 支持 Windows、macOS、Linux
-- ⚡ **轻量级** - 无需额外依赖，开箱即用
+## 🎯 Features
 
-## 📦 安装
+- 🎨 **Cool Interface** - Beautiful terminal UI crafted with ANSI color codes
+- 🚀 **Quick Installation** - Support both pip and npm installation methods
+- 💼 **Complete Display** - Showcase personal info, skills, education, project experience, etc.
+- 🌈 **Cross-platform** - Support Windows, macOS, Linux
+- ⚡ **Lightweight** - No additional dependencies, ready to use out of the box
 
-### 方式一：通过 pip 安装（Python）
+## 📦 Installation
+
+### Option 1: Install via pip (Python)
 
 ```bash
-# 安装
+# Install
 pip3 install ailuntz
 
-# 运行
+# Run
 ailuntz cv
 ```
 
-### 方式二：通过 npm 安装（Node.js）
+### Option 2: Install via npm (Node.js)
 
 ```bash
-# 安装
+# Install
 npm install -g @ailuntz/cli
 
-# 运行
+# Run
 ailuntz cv
 ```
 
-## 🚀 使用方法
+## 🚀 Usage
 
-安装完成后，在终端中输入以下命令即可查看个人简历：
+After installation, simply run the following command in your terminal to view your CV:
 
 ```bash
 ailuntz cv
 ```
 
-### ⚠️ 常见问题
+### ⚠️ Troubleshooting
 
-**macOS 提示 "command not found: ailuntz"**
+**macOS shows "command not found: ailuntz"**
 
-Python 包安装路径不在 PATH 中，解决方法：
+Python package installation path is not in PATH, solution:
 
 ```bash
-# 添加到 PATH
+# Add to PATH
 echo 'export PATH="$HOME/Library/Python/3.9/bin:$PATH"' >> ~/.zshrc
 source ~/.zshrc
 
-# 或使用 python -m 方式运行
+# Or run with python -m
 python3 -m ailuntz cv
 ```
 
-## 💻 本地开发
+## 💻 Local Development
 
-### Python 版本
+### Python Version
 
 ```bash
-# 进入 Python 目录
+# Enter Python directory
 cd python
 
-# 以开发模式安装
+# Install in development mode
 pip install -e .
 
-# 运行测试
+# Run test
 ailuntz cv
 ```
 
-### Node.js 版本
+### Node.js Version
 
 ```bash
-# 进入 Node.js 目录
+# Enter Node.js directory
 cd nodejs
 
-# 安装依赖（如果需要）
+# Install dependencies (if needed)
 npm install
 
-# 测试运行
+# Test run
 npm test
 
-# 或直接运行
+# Or run directly
 node bin/cv.js
 ```
 
-## 📁 项目结构
+## 📁 Project Structure
 
 ```
 cli.ailuntz.com/
-├── README.md              # 主文档
-├── redeme.md             # 项目介绍（中文）
-├── python/               # Python 版本
+├── README.md              # Main documentation (English)
+├── README.zh-CN.md        # Chinese documentation
+├── redeme.md             # Project introduction (Chinese)
+├── python/               # Python version
 │   ├── ailuntz/
 │   │   ├── __init__.py
-│   │   └── cli.py        # CLI 主程序
-│   ├── setup.py          # setuptools 配置
-│   ├── pyproject.toml    # 现代 Python 项目配置
-│   └── MANIFEST.in       # 打包清单
-└── nodejs/               # Node.js 版本
-    ├── package.json      # npm 包配置
-    ├── index.js          # 主模块
+│   │   └── cli.py        # CLI main program
+│   ├── setup.py          # setuptools configuration
+│   ├── pyproject.toml    # Modern Python project configuration
+│   └── MANIFEST.in       # Package manifest
+└── nodejs/               # Node.js version
+    ├── package.json      # npm package configuration
+    ├── index.js          # Main module
     └── bin/
-        └── cv.js         # CLI 入口点
+        └── cv.js         # CLI entry point
 ```
 
-## 🛠️ 发布
+## 🛠️ Publishing
 
-### 发布到 PyPI
+### Publish to PyPI
 
 ```bash
 cd python
 
-# 创建虚拟环境并安装构建工具
+# Create virtual environment and install build tools
 python3 -m venv .venv
 source .venv/bin/activate
 pip install build twine
 
-# 构建包
+# Build package
 python -m build
 
-# 上传到 PyPI（需要先在 https://pypi.org 注册账号）
+# Upload to PyPI (register at https://pypi.org first)
 twine upload dist/*
 ```
 
-### 发布到 npm
+### Publish to npm
 
 ```bash
 cd nodejs
 
-# 登录 npm（需要先在 https://www.npmjs.com 注册账号）
+# Login to npm (register at https://www.npmjs.com first)
 npm login
 
-# 发布（scoped package 需要 --access public）
+# Publish (scoped packages need --access public)
 npm publish --access public
 ```
 
-## 🎨 自定义
+## 🎨 Customization
 
-你可以根据自己的需求修改简历内容：
+You can modify the CV content according to your needs:
 
-### Python 版本
-编辑 `python/ailuntz/cli.py` 中的 `print_cv()` 函数
+### Python Version
+Edit the `print_cv()` function in `python/ailuntz/cli.py`
 
-### Node.js 版本
-编辑 `nodejs/bin/cv.js` 中的 `printCV()` 函数
+### Node.js Version
+Edit the `printCV()` function in `nodejs/bin/cv.js`
 
-## 📝 许可证
+## 📝 License
 
-MIT License - 详见 [LICENSE](LICENSE) 文件
+MIT License - See [LICENSE](LICENSE) file for details
 
-## 👤 作者
+## 👤 Author
 
 **Ailuntz**
 
 - Website: [https://ailuntz.com](https://ailuntz.com)
 - GitHub: [@ailuntz](https://github.com/ailuntz)
 
-## 🤝 贡献
+## 🤝 Contributing
 
-欢迎提交 Issues 和 Pull Requests！
+Issues and Pull Requests are welcome!
 
 ## ⭐ Star History
 
-如果这个项目对你有帮助，请给个 Star ⭐️
+If this project helps you, please give it a Star ⭐️
 
 ---
 
